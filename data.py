@@ -13,3 +13,5 @@ for trade in kraken.fetch_trades('BTC/USD'):
         f"side: {trade['side']} | " +
         f"type: {trade['type']}"
     )
+
+# Try cryptofeed as well
