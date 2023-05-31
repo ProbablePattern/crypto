@@ -1,5 +1,9 @@
+# Create new conda environment from the shell
+conda create --name crypto
+conda activate crypto
+
 # First time install
-#pip3 install ccxt
+pip3 install ccxt
 
 import ccxt
 kraken = ccxt.kraken()
@@ -15,3 +19,5 @@ for trade in kraken.fetch_trades('BTC/USD'):
     )
 
 # Try cryptofeed as well
+# First time install
+pip3 install cryptofeed
